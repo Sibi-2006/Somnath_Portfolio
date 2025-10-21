@@ -2,7 +2,7 @@ import React from 'react'
 import pfp from  "./Images/tojipfp.jpg"
 export default function About() {
     return (
-        <div id="about" className=' w-11/12 p-5'>
+        <div id="about" className=' w-11/12 p-5 mainframe'>
         <div className='flex flex-col md:flex-row mt-4'>
             <div className='md:w-1/3'>
                 <img className='rounded-lg shadow-lg' src={pfp} alt="Profile" />
@@ -15,7 +15,11 @@ export default function About() {
                 </p>
                 <h4>Email: somnathr1332@gmail.com </h4>
                 <h4>Phone: 9360293815</h4>
-                <h4>LinkedIn: <a href="">Somnath Profile</a></h4>
+                <h4>LinkedIn: Somnath Profile</h4>
+                <a href="https://wa.me/9360293815?text=Hey%20bro!%20I%20saw%20your%20website%20🔥" target="_blank">
+  Message me on WhatsApp
+</a>
+
             </div>
         </div>
     </div>

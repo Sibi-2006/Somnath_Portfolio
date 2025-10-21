@@ -5,19 +5,93 @@
 /* Google Fonts are loaded via public/index.html */
 
 :root {
-	/* Font variables */
-	--font-display: 'Abril Fatface', cursive;
-	--font-heading: 'Bebas Neue', sans-serif;
-	--font-slab: 'Roboto Slab', serif;
-	--font-mono: 'Ubuntu Mono', monospace;
-	--font-bitcount: 'Bitcount Grid Single', monospace;
+  /* Font variables */
+  --font-display: 'Abril Fatface', cursive;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-slab: 'Roboto Slab', serif;
+  --font-mono: 'Ubuntu Mono', monospace;
+  --font-bitcount: 'Bitcount Grid Single', monospace;
+
+  /* Mainframe colors (classic bright green palette) */
+  --mf-bg-1: #00110a; /* nearly black */
+  --mf-bg-2: #00220f; /* dark green */
+  --mf-text: #66ff66; /* bright green */
+  --mf-accent: #99ff99; /* lighter green for accents */
+  --mf-dim: #2f5f2f; /* dim green */
+  --mf-border: rgba(102,255,102,0.08);
 }
 
 /* Default body font - adjust as needed */
 body {
-	font-family: var(--font-slab);
-    background-color: #2f2f2f;
+  font-family: var(--font-mono);
+  background: linear-gradient(180deg, var(--mf-bg-1) 0%, var(--mf-bg-2) 100%);
+  color: var(--mf-text);
+  transition: background-color 200ms linear, color 200ms linear;
 }
+
+/* Mainframe container utility - apply to sections you want styled like an old terminal */
+.mainframe {
+  background: transparent;
+  color: var(--mf-text);
+}
+
+/* Subtle scanline overlay (pseudo-element on body) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(0,0,0,0.03) 50%, rgba(255,255,255,0) 50%);
+  background-size: 100% 3px;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+/* Slight vignette for depth */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 100%);
+  z-index: 2;
+}
+
+/* Ensure content renders above scanlines */
+main, .mainframe, .experience, .book-card, header, .card-back {
+  position: relative;
+  z-index: 3;
+}
+
+/* Header styling for mainframe */
+
+header.mainframe{
+  backdrop-filter: blur(4px);
+  background: linear-gradient(180deg, rgba(0,34,15,0.65), rgba(0,0,0,0.35));
+  border-bottom: 1px solid var(--mf-border);
+}
+
+.mainframe-btn{
+  background: transparent;
+  color: var(--mf-text);
+  border: 1px solid rgba(102,255,102,0.12);
+  box-shadow: 0 0 8px rgba(0,0,0,0.6) inset;
+}
+
+a{ color: var(--mf-text); text-decoration: none; }
+a:hover{ color: var(--mf-accent); }
+
+.book-card { background: rgba(0,0,0,0.14); border: 1px solid rgba(102,255,102,0.06); }
+.book-card .card-front{ filter: grayscale(5%) contrast(1.02); }
+.book-card:hover{ box-shadow: 0 0 24px rgba(102,255,102,0.06), 0 0 8px rgba(102,255,102,0.03) inset; transform: translateY(-3px); }
+
+/* Buttons and interactive elements */
+.mainframe-btn:hover{ border-color: rgba(102,255,102,0.24); color: var(--mf-accent); }
+
+/* Accent and small UI tweaks */
+.text-accent{ color: var(--mf-accent); }
+.muted{ color: var(--mf-dim); }
+
 
 /* Enable smooth scrolling for in-page navigation */
 html {
@@ -31,6 +105,24 @@ html {
 .font-mono { font-family: var(--font-mono); }
 .font-bitcount { font-family: var(--font-bitcount); }
 
+/* Blinking caret utility */
+.caret {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background: var(--mf-text);
+  margin-left: 6px;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: bottom;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* dataset styles removed - using mainframe skills list only */
+
+
 .resume-btn{
     @apply bg-blue-500 text-white font-bold py-2 px-4 mt-2 rounded hover:bg-blue-700 transition duration-300;                
 }
@@ -38,56 +130,19 @@ html {
     @apply text-gray-700 font-semibold hover:text-blue-500 transition duration-300 cursor-pointer;      
 }
 .title{
-    @apply text-3xl font-bold mb-4 text-white;
-    text-shadow: 2px 2px 20px #ffffff;
+  @apply text-3xl font-bold mb-4 text-white;
+  text-shadow: 0 0 8px rgba(127,255,212,0.2);
 }
 .skill{
     @apply bg-blue-200 text-blue-950 font-bold p-5 rounded-md m-5 text-center w-11/12 md:w-28;
     box-shadow: 3px 3px 20px rgb(150, 150, 255);
     list-style: none;
 }
-.book-card {
-  width: 90%;
-  height: 20rem; /* same as h-96 */
-  perspective: 1000px;
-  cursor: pointer;
-}
 
-.card-inner {
-  position: relative;
-  width: 80%;
-  height: 100%;
-  transition: transform 0.7s;
-  transform-style: preserve-3d;
-}
+/* Mainframe skills list */
+.mf-list{ font-family: var(--font-mono); color: var(--mf-text); }
+.mf-list-row{ display: flex; gap: 1rem; align-items: center; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid rgba(102,255,102,0.04); }
+.mf-list-row:hover{ background: linear-gradient(90deg, rgba(102,255,102,0.02), rgba(102,255,102,0.01)); }
 
-.book-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 80%;
-  height: 100%;
-  border-radius: 0.75rem; /* same as rounded-xl */
-  backface-visibility: hidden;
-  overflow: hidden;
-}
-
-.card-front {
-  object-fit: cover;
-}
-
-.card-back {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transform: rotateY(180deg);
-  padding: 1rem;
-}
 
 
