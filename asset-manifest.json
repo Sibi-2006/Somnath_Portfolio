@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Somnath_Portfolio/static/css/main.698a154a.css",
-    "main.js": "/Somnath_Portfolio/static/js/main.8090843c.js",
+    "main.css": "/Somnath_Portfolio/static/css/main.9aacdb63.css",
+    "main.js": "/Somnath_Portfolio/static/js/main.87752605.js",
     "static/media/subconsciousMind.jpg": "/Somnath_Portfolio/static/media/subconsciousMind.05e367093560e9d5f6e0.jpg",
     "static/media/habitbook.jpg": "/Somnath_Portfolio/static/media/habitbook.cdc088421b19c30dc675.jpg",
     "static/media/moneyBook.jpg": "/Somnath_Portfolio/static/media/moneyBook.d57b92e6c53db6359c71.jpg",
@@ -14,11 +14,11 @@
     "static/media/Dopamine.jpg": "/Somnath_Portfolio/static/media/Dopamine.d6bdaa7f62d0d17d28be.jpg",
     "static/media/aloneBook.jpg": "/Somnath_Portfolio/static/media/aloneBook.82d065ba284e16f663db.jpg",
     "index.html": "/Somnath_Portfolio/index.html",
-    "main.698a154a.css.map": "/Somnath_Portfolio/static/css/main.698a154a.css.map",
-    "main.8090843c.js.map": "/Somnath_Portfolio/static/js/main.8090843c.js.map"
+    "main.9aacdb63.css.map": "/Somnath_Portfolio/static/css/main.9aacdb63.css.map",
+    "main.87752605.js.map": "/Somnath_Portfolio/static/js/main.87752605.js.map"
   },
   "entrypoints": [
-    "static/css/main.698a154a.css",
-    "static/js/main.8090843c.js"
+    "static/css/main.9aacdb63.css",
+    "static/js/main.87752605.js"
   ]
 }
