@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Somnath_Portfolio/static/css/main.698a154a.css",
+    "main.js": "/Somnath_Portfolio/static/js/main.8090843c.js",
+    "static/media/subconsciousMind.jpg": "/Somnath_Portfolio/static/media/subconsciousMind.05e367093560e9d5f6e0.jpg",
+    "static/media/habitbook.jpg": "/Somnath_Portfolio/static/media/habitbook.cdc088421b19c30dc675.jpg",
+    "static/media/moneyBook.jpg": "/Somnath_Portfolio/static/media/moneyBook.d57b92e6c53db6359c71.jpg",
+    "static/media/tojipfp.jpg": "/Somnath_Portfolio/static/media/tojipfp.970a20005389c66e1fac.jpg",
+    "static/media/ikagai.jpg": "/Somnath_Portfolio/static/media/ikagai.ca4a89a7cf47893dba4b.jpg",
+    "static/media/emoctionBook.jpg": "/Somnath_Portfolio/static/media/emoctionBook.29a2828b184805867e3f.jpg",
+    "static/media/alchemist.jpg": "/Somnath_Portfolio/static/media/alchemist.6ce3a002849ce0d9988f.jpg",
+    "static/media/richDad.jpg": "/Somnath_Portfolio/static/media/richDad.51eca2a54390cf92f80c.jpg",
+    "static/media/DontTalk.jpg": "/Somnath_Portfolio/static/media/DontTalk.0042b16baaad83a401fd.jpg",
+    "static/media/Dopamine.jpg": "/Somnath_Portfolio/static/media/Dopamine.d6bdaa7f62d0d17d28be.jpg",
+    "static/media/aloneBook.jpg": "/Somnath_Portfolio/static/media/aloneBook.82d065ba284e16f663db.jpg",
+    "index.html": "/Somnath_Portfolio/index.html",
+    "main.698a154a.css.map": "/Somnath_Portfolio/static/css/main.698a154a.css.map",
+    "main.8090843c.js.map": "/Somnath_Portfolio/static/js/main.8090843c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.698a154a.css",
+    "static/js/main.8090843c.js"
+  ]
+}
