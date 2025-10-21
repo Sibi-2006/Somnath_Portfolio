@@ -6,7 +6,7 @@ Welcome to my personal portfolio! This website showcases my projects, skills, an
 
 ## 🌐 Live Site
 
-Check out the live version of my portfolio here:  
+Check out the live version of my portfolio here:   
 [https://Sibi-2006.github.io/Somnath_Portfolio/](https://Sibi-2006.github.io/Somnath_Portfolio/)
 
 ---
