@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.698a154a.css",
-    "main.js": "/portfolio/static/js/main.358923b7.js",
+    "main.css": "/portfolio/static/css/main.9aacdb63.css",
+    "main.js": "/portfolio/static/js/main.0ebd358b.js",
     "static/media/subconsciousMind.jpg": "/portfolio/static/media/subconsciousMind.05e367093560e9d5f6e0.jpg",
     "static/media/habitbook.jpg": "/portfolio/static/media/habitbook.cdc088421b19c30dc675.jpg",
     "static/media/moneyBook.jpg": "/portfolio/static/media/moneyBook.d57b92e6c53db6359c71.jpg",
@@ -14,11 +14,11 @@
     "static/media/Dopamine.jpg": "/portfolio/static/media/Dopamine.d6bdaa7f62d0d17d28be.jpg",
     "static/media/aloneBook.jpg": "/portfolio/static/media/aloneBook.82d065ba284e16f663db.jpg",
     "index.html": "/portfolio/index.html",
-    "main.698a154a.css.map": "/portfolio/static/css/main.698a154a.css.map",
-    "main.358923b7.js.map": "/portfolio/static/js/main.358923b7.js.map"
+    "main.9aacdb63.css.map": "/portfolio/static/css/main.9aacdb63.css.map",
+    "main.0ebd358b.js.map": "/portfolio/static/js/main.0ebd358b.js.map"
   },
   "entrypoints": [
-    "static/css/main.698a154a.css",
-    "static/js/main.358923b7.js"
+    "static/css/main.9aacdb63.css",
+    "static/js/main.0ebd358b.js"
   ]
 }
